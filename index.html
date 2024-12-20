@@ -1,278 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventtribe</title>
+    <!-- css link -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <title>EventTribe</title>
-    <!-- Bootstrap -->
+    <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl-caurosal link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
 
-<!-- Navbar section start -->
-<header id="nav">
-    <!-- Subheader -->
-    <div class="d-none d-md-block main-subheader">
-        <div class="container-fluid">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-phone-alt me-2"></i>Need help? Call us
-                        <a href="tel:7946794600" class="text-decoration-none a-link">+91 7946794600</a>
-                    </p>
+    <!-- join with us start -->
+    <div class="container joinUsMain">
+        <h1>Ready To Get Started...?</h1>
+        <div class="container owl-carousel event-Carousel owl-theme">
+            <div class="row item">
+                <div class="col-lg-5 joinUsImage">
+                    <img src="https://live.themewild.com/eventu/assets/img/choose/01.jpg"
+                        alt="">
                 </div>
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-envelope me-2"></i>Email us:
-                        <a href="mailto:info@eventtribe.com"
-                            class="text-decoration-none a-link">info@eventtribe.com</a>
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-calendar-alt me-2"></i>Upcoming Event:
-                        <a href="#" class="text-decoration-none a-link">EventTribe 2024</a>
-                    </p>
+                <div class="col-lg-7 joinUsDetails">
+                    <h3>"Expand Your Reach, Streamline Your Events"</h3>
+                    <h2>Why Choose Us..?</h2>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Increase Visibility</span><br>Reach a wider audience of engaged users actively searching for exciting
+                            events
+                            to attend.</P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Simplify Event Management</span><br>From ticket sales to attendee engagement, manage everything in one
+                            place.
+                        </P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Boost Your Brand</span><br>Receive ratings, reviews, and testimonials that help build credibility and
+                            trust.
+                        </P>
+                    </div>
+                    <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <nav id="navbar-example2" class="navbar navbar-expand-lg py-3">
-        <div class="container">
-            <a class="navbar-brand " href="./index.html"><img src="images/logo.png" alt="">
-               <span class="logo-name">Event<span class="logo-name-2nd">Tribe.</span>
-               </span> 
-            </a>
-            <button class="navbar-toggler text-white navBar-button-menu" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars menu-icon" style="font-size: 20px;"></i>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
-                aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Quick Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close">
-                        <i class="fa-solid fa-close menu-icon-close" style="font-size: 20px;"></i>
-                    </button>
+            <div class="row item">
+                <div class="col-lg-5 joinUsImage">
+                    <img src="https://live.themewild.com/eventu/assets/img/choose/01.jpg"
+                        alt="">
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav align-items-center flex-grow-1 justify-content-end header-list">
-                        <li class="nav-item"><a class="nav-link active me-md-4" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Service</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Partner</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Contact</a></li>
-                        <li class="nav-item">
-                            <div data-aos="fade-left">
-                                <a class="btn-login shadow-sm" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Login
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-lg-7 joinUsDetails">
+                    <h3>"Bring Your Creative Events to Life"</h3>
+                    <h2>Why Join Us..?</h2>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Reach a Larger Audience</span><br>Tap into a community of event seekers who are eager to discover new
+                            experiences.</P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Hassle-Free Event Creation</span><br>Quickly set up your event with customizable pages and simple
+                            booking
+                            options.</P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Earn More</span><br>Offer flexible ticketing, promotions, and gain more visibility to increase your
+                            revenue.</P>
+                    </div>
+                    <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                </div>
+            </div>
+
+            <div class="row item">
+                <div class="col-lg-5 joinUsImage">
+                    <img src="https://live.themewild.com/eventu/assets/img/about/01.jpg"
+                        alt="">
+                </div>
+                <div class="col-lg-7 joinUsDetails">
+                    <h3>"Discover and Book the Best Events Near You"</h3>
+                    <h2>Why Choose Us..?</h2>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Find Events You Love</span><br>Discover new and exciting events in your area, all in one place.</P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Fast, Secure Booking</span><br>Reserve your spot with just a few clicks and enjoy a smooth booking
+                            experience.</P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <P><span>Exclusive Offers</span><br>Get early access to tickets, discounts, and special promotions.</P>
+                    </div>
+                    <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
-<!-- Navbar section end -->
-
-<!-- start to Banner -->
-<section class="banner">
-    <div class="banner-content text-center text-white">
-        <h1 class="display-3 fw-bold">Welcome to EventTribe</h1>
-        <p class="lead mt-3">We connect you with top event providers, making your event planning effortless and
-            memorable.</p>
-
-        <p class="fs-4 mt-3">
-            Whether you're planning a wedding, a corporate event, or a private celebration, EventTribe offers
-            seamless solutions that meet your unique needs. Let us bring your vision to life with trusted event
-            professionals.
-        </p>
-
-        <a href="#services" class="btn btn-primary mt-4 px-5 py-2">Explore Our Services</a>
-        <a href="#contact" class="btn btn-outline-light mt-4 px-5 py-2">Get In Touch</a>
-        <div class="mt-4">
-            <span class="badge bg-warning text-dark p-2">Special Offer</span>
-            <span class="ms-3">Book your event today and enjoy a 10% discount on our premium services!</span>
-        </div>
     </div>
-</section>
-<!-- end to Banner -->
-
-
-    <!-- upcoming events section start  -->
-    <div class="container" style="display: flex;justify-content: flex-end;">
-        <div class="upcomingAndAdv">
-            <h1 class="upcomingHeading">Upcoming events</h1>
-
-            <div class="container-fluid cards">
-                <div class="card bg-dark text-white">
-                    <img src="https://www.live-production.tv/sites/default/files/styles/article_main_image_706/public/claypaky_arrahman_india_05.png" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Classical Music Evening</h5>
-                        <div class="card-footer text-center mt-auto">
-                            <p class="card-text">Date: 2024-08-15</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="http://pegasusevents.in/wp-content/uploads/2017/07/Blog-Image-7-720x370.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Improving Advertising Strategies</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-09-10</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://www.sociallybuzz.com/wp-content/themes/sociallybuzz-theme/images/blog.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Enhancing Advertising Effectiveness</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-08-15</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*QF7HtLucYVqCxU9xaeO5yA.jpeg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Transforming Advertising Excellence</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-11-02</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://blog.vmgstudios.com/hs-fs/hubfs/social-media-brand-equity-vmg-studios.jpg?width=2000&name=social-media-brand-equity-vmg-studios.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Leveraging Social Media Platforms</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-12-01</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                 
-            </div>
-            <div class="container-fluid" style="margin-top: 10px;">
-                <video width="100%" height="480" autoplay muted loop>
-                    <source src="./assets/videos/3113175-hd_1920_1080_30fps.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-
-            </div>
-              
-        </div>
-    </div>
-    <!-- upcoming events section stop  -->
-    
-
-
-    
-
-    <!-- footer start -->   
-    <footer class="footer-14398">
-      
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <a href="#" class="footer-site-logo">Eventribe</a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus.</p>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>Shop</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Event Types</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Website</a></li>
-            <li><a href="#">Online retail</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>Press</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Events</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Awards</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Online retail</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>About</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-12 pb-4">
-          <div class="line"></div>
-        </div>
-        <div class="col-md-6 text-md-left">
-          <ul class="list-unstyled link-menu nav-left">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Code of Conduct</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <ul class="list-unstyled social nav-right">
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-instagram"></span></a></li>
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-7">
-          <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fuga. Ex at maxime eum odio quibusdam pariatur expedita explicabo harum! Consectetur ducimus delectus nemo, totam odit!</small></p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-    </footer>
-    <!-- footer end -->
+    <!-- join with us end -->
 
 
 
-   
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- owl-caurosal link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.event-Carousel').owlCarousel({
+            loop: true,
+            margin: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
