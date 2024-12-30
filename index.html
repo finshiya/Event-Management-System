@@ -11,268 +11,903 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <title>EventTribe</title>
+    <title>EventTribes</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- owl-caurosal link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<!-- Navbar section start -->
-<header id="nav">
-    <!-- Subheader -->
-    <div class="d-none d-md-block main-subheader">
-        <div class="container-fluid">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-phone-alt me-2"></i>Need help? Call us
-                        <a href="tel:7946794600" class="text-decoration-none a-link">+91 7946794600</a>
-                    </p>
+
+
+    <!-- Navbar section start -->
+    <header id="nav">
+        <!-- Subheader -->
+        <div class="d-none d-md-block main-subheader">
+            <div class="container-fluid">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4 text-center">
+                        <p class="my-2">
+                            <i class="fas fa-phone-alt me-2"></i>Need help? Call us
+                            <a href="tel:7946794600" class="text-decoration-none a-link">+91 7946794600</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="my-2">
+                            <i class="fas fa-envelope me-2"></i>Email us:
+                            <a href="mailto:info@eventtribe.com"
+                                class="text-decoration-none a-link">info@eventtribe.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="my-2">
+                            <i class="fas fa-calendar-alt me-2"></i>Upcoming Event:
+                            <a href="#" class="text-decoration-none a-link">EventTribe 2024</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-envelope me-2"></i>Email us:
-                        <a href="mailto:info@eventtribe.com"
-                            class="text-decoration-none a-link">info@eventtribe.com</a>
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <p class="my-2">
-                        <i class="fas fa-calendar-alt me-2"></i>Upcoming Event:
-                        <a href="#" class="text-decoration-none a-link">EventTribe 2024</a>
-                    </p>
+
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav id="navbar-example2" class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand " href="./index.html"><img src="images/logo.png" alt="">
+                    <span class="logo-name">Event<span class="logo-name-2nd">Tribes.</span>
+                    </span>
+                </a>
+                <button class="navbar-toggler text-white navBar-button-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars menu-icon" style="font-size: 20px;"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Quick Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <i class="fa-solid fa-close menu-icon-close" style="font-size: 20px;"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-center flex-grow-1 justify-content-end header-list">
+                            <li class="nav-item"><a class="nav-link active me-md-4" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link me-md-4" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link me-md-4" href="#">Service</a></li>
+                            <li class="nav-item"><a class="nav-link me-md-4" href="#">Partner</a></li>
+                            <li class="nav-item"><a class="nav-link me-md-4" href="#">Contact</a></li>
+                            <li class="nav-item">
+                                <div data-aos="fade-left">
+                                    <a class="btn-login shadow-sm" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Login
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+    <!-- Navbar section end -->
 
+    <!-- start to Banner -->
+    <section class="banner">
+        <div class="banner-content text-center text-white">
+            <h1 class="display-3 fw-bold">Welcome to EventTribes</h1>
+            <p class="banner-short mt-3">Effortless event planning with top professionals.</p>
+            <div class="banner-phara">
+                <p class="mt-3">From corporate gatherings to private celebrations, EventTribe connects you with trusted
+                    providers to bring your vision to life.</p>
+            </div>
+            
+            <a href="#services" class="btn btn-primary mt-4 px-5 py-2">Explore Our Services</a>
+            <a href="#contact" class="btn btn-outline-light mt-4 px-5 py-2">Get In Touch</a>
+            <div class="mt-4">
+                <span class="badge bg-warning text-dark p-2">Special Offer</span>
+                <span class="ms-3">Book your event today and enjoy a <span class="banner-discount">10% discount</span>
+                    on our premium services!</span>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- end to Banner -->
 
-    <!-- Navbar -->
-    <nav id="navbar-example2" class="navbar navbar-expand-lg py-3">
-        <div class="container">
-            <a class="navbar-brand " href="./index.html"><img src="images/logo.png" alt="">
-               <span class="logo-name">Event<span class="logo-name-2nd">Tribe.</span>
-               </span> 
-            </a>
-            <button class="navbar-toggler text-white navBar-button-menu" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars menu-icon" style="font-size: 20px;"></i>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
-                aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Quick Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close">
-                        <i class="fa-solid fa-close menu-icon-close" style="font-size: 20px;"></i>
-                    </button>
+
+     <!-- upcoming events section start  -->
+
+     <div class="container all"  style="display: flex;" >
+        <div class="div  shakir-section">
+             <!-- events card start -->
+        <div class="container events-section">
+            <div class="row buttons-row" >
+                <h3 class="event-head">Events near Calicut,In</h3>
+                <div class="event-content d-flex">
+                    <h5 class="event-category event-category-1">Events</h5>&nbsp;&nbsp;&nbsp;
+                    <h5 class="event-category">Groups</h5>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav align-items-center flex-grow-1 justify-content-end header-list">
-                        <li class="nav-item"><a class="nav-link active me-md-4" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Service</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Partner</a></li>
-                        <li class="nav-item"><a class="nav-link me-md-4" href="#">Contact</a></li>
-                        <li class="nav-item">
-                            <div data-aos="fade-left">
-                                <a class="btn-login shadow-sm" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Login
-                                </a>
+                <div class="events-btns col-md-9">
+                    <button class="events-button">Dec-19 to Dec-21,2024</button>
+                    <button class="events-button">Online</button>
+                    <button class="events-button">Offline</button>
+                    <form class="d-flex" role="search">
+                        <input class=" me-2 event-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="events-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container events-con overflow-y-scroll" >
+            <div class="main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img image-event" alt="...">
                             </div>
-                        </li>
-                    </ul>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Thu, Dec 19 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Every new beginning comes from some other beginning's end
+                                    </h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button> <i class="fa-light fa-star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/13179528/pexels-photo-13179528.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Fri, Dec 20 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">The key to success is to start before you’re ready</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/2952834/pexels-photo-2952834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Sat, Dec 21 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Dream big. Work hard. Stay focused</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class=" card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src=" https://images.pexels.com/photos/625644/pexels-photo-625644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Sun, Dec 22 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Innovation distinguishes between a leader and a follower.
+                                    </h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=600 "
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Mon, Dec 23 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Coming together is a beginning; keeping together is
+                                        progress; working together is success</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class=" card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src=" https://images.pexels.com/photos/801863/pexels-photo-801863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Tue, Dec 24 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Your network is your net worth</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class=" card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 "
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Wed, Dec 25 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Learn as if you will live forever, live like you will die
+                                        tomorrow</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 "
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Thu, Dec 26 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Great things never came from comfort zones</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src=" https://images.pexels.com/photos/2893330/pexels-photo-2893330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Fri, Dec 27 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">Celebrate every win, no matter how small.</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://images.pexels.com/photos/3025096/pexels-photo-3025096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 "
+                                    class="card-img-top image-event" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="card-date pb-1">Sat, Dec 28 · 2:30 PM IST</div>
+                                    <h5 class="card-title pb-1">The future depends on what you do today</h5>
+                                    <div class="card-abt pb-1">Every new beginning comes from some other beginning's end
+                                    </div>
+                                    <div class="pt-2"><button class="card-abt-btn border-0 p-2 rounded-pill">Join
+                                            Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+        <!-- events card end -->
+    
+            <div class="upcomingAndAdv">
+                <h1 class="upcomingHeading">Upcoming events</h1>
+    
+                <div class="container-fluid cards">
+                    <div class="card">
+                        <div class="div" style="display: flex;position: relative;">
+                        <img src="https://www.live-production.tv/sites/default/files/styles/article_main_image_706/public/claypaky_arrahman_india_05.png" alt="...">
+                        <div class="inside-card"  style="height: 20px !important;">
+                            <h3 class="card-title">Classical Music Evening</h3>
+                            <p class="card-city">KANNUR</p>   
+                        </div>
+                        <span class="card-date">Jan 15, 2025</span>
+                        <div class="div" style="display: flex;">
+                            <span class="card-catg">Category</span>
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        
+                    </div>
+                  
+                    </div>
+    
+                    <div class="card">
+                        <div class="div" style="display: flex;position: relative;">
+                        <img src="http://pegasusevents.in/wp-content/uploads/2017/07/Blog-Image-7-720x370.jpg" alt="...">
+                        <div class="inside-card"  style="height: 20px !important;margin-top: 3px;">
+                            <h3 class="card-title">Media Companies: Improving Advertising Strategies</h3>
+                            <p class="card-city">BANGALORE</p>   
+                        </div>
+                        <span class="card-date">2024-09-10</span>
+                        <div class="div" style="display: flex;">
+                            <span class="card-catg">Category</span>
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        
+                    </div>
+                  
+                    </div>
+    
+                    <div class="card">
+                        <div class="div" style="display: flex;position: relative;">
+                        <img src="https://www.sociallybuzz.com/wp-content/themes/sociallybuzz-theme/images/blog.jpg" alt="...">
+                        <div class="inside-card"  style="height: 20px !important;margin-top: 3px;">
+                            <h3 class="card-title">Media Companies: Enhancing Advertising Effectiveness</h3>
+                            <p class="card-city">MUMBAI</p>   
+                        </div>
+                        <span class="card-date">2024-10-05</span>
+                        <div class="div" style="display: flex;">
+                            <span class="card-catg">Category</span>
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        
+                    </div>
+                  
+                    </div>
+    
+                    <div class="card">
+                        <div class="div" style="display: flex;position: relative;">
+                        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*QF7HtLucYVqCxU9xaeO5yA.jpeg" alt="...">
+                        <div class="inside-card"  style="height: 20px !important;margin-top: 3px;">
+                            <h3 class="card-title">Media Companies:Transforming Advertising Excellence</h3>
+                            <p class="card-city">DELHI</p>   
+                        </div>
+                        <span class="card-date">2024-11-02</span>
+                        <div class="div" style="display: flex;">
+                            <span class="card-catg">Category</span>
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        
+                    </div>
+                  
+                    </div>
+    
+                    <div class="card">
+                        <div class="div" style="display: flex;position: relative;">
+                        <img src="https://blog.vmgstudios.com/hs-fs/hubfs/social-media-brand-equity-vmg-studios.jpg?width=2000&name=social-media-brand-equity-vmg-studios.jpg" alt="...">
+                        <div class="inside-card"  style="height: 20px !important;margin-top: 3px;">
+                            <h3 class="card-title">Leveraging Social Media Platforms</h3>
+                            <p class="card-city">HYDERABAD</p>   
+                        </div>
+                        <span class="card-date">2024-12-01</span>
+                        <div class="div" style="display: flex;">
+                            <span class="card-catg">Category</span>
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        
+                    </div>
+                  
+                    </div>
+                     
+                </div>
+                <div class="container-fluid v" style="margin-top: 10px;">
+                    <video width="100%"  autoplay muted loop>
+                        <source src="./assets/videos/2951209-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+    
+                </div>
+                  
+            </div>
+        </div>
+    
+        <!-- upcoming events section stop  -->
+    
+    
+
+    <!-- join with us start -->
+    <section class="Join-with-us mb-3">
+        <div class="container joinUsMain">
+            <h1>Ready To Get Started...?</h1>
+            <div class="container owl-carousel event-Carousel owl-theme">
+                <div class="row item">
+                    <div class="col-lg-5 joinUsImage">
+                        <img src="https://live.themewild.com/eventu/assets/img/choose/01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 joinUsDetails">
+                        <h3>"Expand Your Reach, Streamline Your Events"</h3>
+                        <h2>Why Choose Us..?</h2>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Increase Visibility</span><br>Reach a wider audience of engaged users actively
+                                searching for exciting
+                                events
+                                to attend.</P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Simplify Event Management</span><br>From ticket sales to attendee engagement,
+                                manage
+                                everything in one
+                                place.
+                            </P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Boost Your Brand</span><br>Receive ratings, reviews, and testimonials that help
+                                build
+                                credibility and
+                                trust.
+                            </P>
+                        </div>
+                        <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-lg-5 joinUsImage">
+                        <img src="https://live.themewild.com/eventu/assets/img/choose/01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 joinUsDetails">
+                        <h3>"Bring Your Creative Events to Life"</h3>
+                        <h2>Why Join Us..?</h2>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Reach a Larger Audience</span><br>Tap into a community of event seekers who are
+                                eager
+                                to discover new
+                                experiences.</P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Hassle-Free Event Creation</span><br>Quickly set up your event with customizable
+                                pages
+                                and simple
+                                booking
+                                options.</P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Earn More</span><br>Offer flexible ticketing, promotions, and gain more visibility
+                                to
+                                increase your
+                                revenue.</P>
+                        </div>
+                        <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-lg-5 joinUsImage">
+                        <img src="https://live.themewild.com/eventu/assets/img/about/01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 joinUsDetails">
+                        <h3>"Discover and Book the Best Events Near You"</h3>
+                        <h2>Why Choose Us..?</h2>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Find Events You Love</span><br>Discover new and exciting events in your area, all
+                                in
+                                one place.</P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Fast, Secure Booking</span><br>Reserve your spot with just a few clicks and enjoy a
+                                smooth booking
+                                experience.</P>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <P><span>Exclusive Offers</span><br>Get early access to tickets, discounts, and special
+                                promotions.</P>
+                        </div>
+                        <button>Explore Now <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
-<!-- Navbar section end -->
+    </section>
+    <!-- join with us end -->
 
-<!-- start to Banner -->
-<section class="banner">
-    <div class="banner-content text-center text-white">
-        <h1 class="display-3 fw-bold">Welcome to EventTribe</h1>
-        <p class="lead mt-3">We connect you with top event providers, making your event planning effortless and
-            memorable.</p>
+    <!-- testimonial section start -->
 
-        <p class="fs-4 mt-3">
-            Whether you're planning a wedding, a corporate event, or a private celebration, EventTribe offers
-            seamless solutions that meet your unique needs. Let us bring your vision to life with trusted event
-            professionals.
-        </p>
-
-        <a href="#services" class="btn btn-primary mt-4 px-5 py-2">Explore Our Services</a>
-        <a href="#contact" class="btn btn-outline-light mt-4 px-5 py-2">Get In Touch</a>
-        <div class="mt-4">
-            <span class="badge bg-warning text-dark p-2">Special Offer</span>
-            <span class="ms-3">Book your event today and enjoy a 10% discount on our premium services!</span>
-        </div>
-    </div>
-</section>
-<!-- end to Banner -->
-
-
-    <!-- upcoming events section start  -->
-    <div class="container" style="display: flex;justify-content: flex-end;">
-        <div class="upcomingAndAdv">
-            <h1 class="upcomingHeading">Upcoming events</h1>
-
-            <div class="container-fluid cards">
-                <div class="card bg-dark text-white">
-                    <img src="https://www.live-production.tv/sites/default/files/styles/article_main_image_706/public/claypaky_arrahman_india_05.png" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Classical Music Evening</h5>
-                        <div class="card-footer text-center mt-auto">
-                            <p class="card-text">Date: 2024-08-15</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
+    <div class="testimonials-section">
+	
+        <!-- Section Header Starts -->
+        <header class="section-header">
+            <h1>What Clients Say</h1>
+        </header>
+        <!-- Section Header Ends -->
+    
+        <!-- Owl Carousel Slider Starts -->
+        <div class="owl-carousel owl-theme testimonials-container">
+            <!-- Item1 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image1.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
                     </div>
                 </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="http://pegasusevents.in/wp-content/uploads/2017/07/Blog-Image-7-720x370.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Improving Advertising Strategies</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-09-10</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://www.sociallybuzz.com/wp-content/themes/sociallybuzz-theme/images/blog.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Enhancing Advertising Effectiveness</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-08-15</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*QF7HtLucYVqCxU9xaeO5yA.jpeg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Media Companies: Transforming Advertising Excellence</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-11-02</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white">
-                    <img src="https://blog.vmgstudios.com/hs-fs/hubfs/social-media-brand-equity-vmg-studios.jpg?width=2000&name=social-media-brand-equity-vmg-studios.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">Leveraging Social Media Platforms</h5>
-                        <div class="card-footer text-center mt-auto  ">
-                            <p class="card-text">Date: 2024-12-01</p>
-                            <a href="#" class="btn custom-btn mt-2">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                 
             </div>
-            <div class="container-fluid" style="margin-top: 10px;">
-                <video width="100%" height="480" autoplay muted loop>
-                    <source src="./assets/videos/3113175-hd_1920_1080_30fps.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-
+            <!-- Item1 Ends -->
+    
+            <!-- Item2 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image2.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
+                    </div>
+                </div>
             </div>
-              
+            <!-- Item2 Ends -->
+    
+            <!-- Item3 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image3.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item3 Ends -->
+    
+            <!-- Item4 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image4.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item4 Ends -->
+    
+            <!-- Item5 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image5.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item5 Ends -->
+    
+            <!-- Item6 Starts -->
+            <div class="item testimonial-card">
+                <main class="test-card-body">
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <h2>Awesome Coding</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </main>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./Assets/Images/image6.jpg">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Person Name</span>
+                        <span>Description</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item6 Ends -->
+    
         </div>
+        <!-- Owl Carousel Slider Ends -->
+    
     </div>
-    <!-- upcoming events section stop  -->
+    <!-- testimonial section end -->
     
 
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-section">
+                <div class="logo">EventTribes</div>
+                <div class="logo-desc">We are an Event Management Company that conducts and organizes events based on
+                    the customers needs.</div>
+            </div>
 
-    
+            <div class="nav-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><i class="fas fa-cogs"></i> Event Types</li>
+                    <li><i class="fas fa-star"></i> Features</li>
+                    <li><i class="fas fa-question-circle"></i> FAQ</li>
+                    <li><i class="fas fa-globe"></i> Website</li>
+                    <li><i class="fas fa-cart-plus"></i> Online retail</li>
+                </ul>
+            </div>
 
-    <!-- footer start -->   
-    <footer class="footer-14398">
-      
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <a href="#" class="footer-site-logo">Eventribe</a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus.</p>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>Shop</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Event Types</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Website</a></li>
-            <li><a href="#">Online retail</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>Press</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Events</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Awards</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Online retail</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 ml-auto">
-          <h3>About</h3>
-          <ul class="list-unstyled links">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </div>
-      </div>
+            <div class="nav-section">
+                <h3>Press</h3>
+                <ul>
+                    <li><i class="fas fa-calendar-alt"></i> Events</li>
+                    <li><i class="fas fa-newspaper"></i> News</li>
+                    <li><i class="fas fa-trophy"></i> Awards</li>
+                    <li><i class="fas fa-comment-dots"></i> Testimonials</li>
+                    <li><i class="fas fa-store"></i> Online retail</li>
+                </ul>
+            </div>
 
-      <div class="row mb-4">
-        <div class="col-12 pb-4">
-          <div class="line"></div>
-        </div>
-        <div class="col-md-6 text-md-left">
-          <ul class="list-unstyled link-menu nav-left">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Code of Conduct</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <ul class="list-unstyled social nav-right">
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-instagram"></span></a></li>
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-          </ul>
-        </div>
-      </div>
+            <div class="nav-section">
+                <h3>About</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> Contact</li>
+                    <li><i class="fas fa-briefcase"></i> Services</li>
+                    <li><i class="fas fa-users"></i> Team</li>
+                    <li><i class="fas fa-graduation-cap"></i> Career</li>
+                    <li><i class="fas fa-address-book"></i> Contacts</li>
+                </ul>
+            </div>
 
-      <div class="row">
-        <div class="col-md-7">
-          <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fuga. Ex at maxime eum odio quibusdam pariatur expedita explicabo harum! Consectetur ducimus delectus nemo, totam odit!</small></p>
+            <div class="nav-section">
+                <h3>Get in Touch</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        123 Business Street, New York, NY 10001
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        +1 (555) 123-4567
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        contact@eventribe.com
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-    
-  </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Code of Conduct</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+
+        <div class="bottom-text">
+            2024 - FullStack Developer Academy
+        </div>
     </footer>
-    <!-- footer end -->
 
 
+    <!-- FOOTER END -->
 
-   
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl-caurosal link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.event-Carousel').owlCarousel({
+            loop: true,
+            margin: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./assets/JS/index.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
