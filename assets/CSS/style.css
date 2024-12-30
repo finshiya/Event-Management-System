@@ -27,7 +27,6 @@ background-color: var(--default-color);
 font-family: var(--default-font);
 }
 
-
 /* navbar section */
 .main-subheader {
   background-color: var(--primary-color);
@@ -43,46 +42,87 @@ font-family: var(--default-font);
   font-weight: 600;
 }
 
-.joinUsMain>h1{
-
-color: var(--secondary-color);
-text-align: center;
-font-family: var(--heading-font);
-font-size: 40px;
-padding: 30px 0;
+.logo-name-2nd {
+  color: var(--heading-color);
 }
 
-.joinUsImage{
+.navBar-button-menu {
+  border: none;
+}
 
-display: flex;
+.menu-icon {
+  color: var(--primary-color);
+}
+
+.menu-icon-close {
+  color: var(--primary-color);
+}
+
+.a-link {
+  color: var(--accent-color);
+}
+
+.header-list .nav-item .nav-link {
+  /* color: var(--primary-color); */
+  font-weight: 520;
+  letter-spacing: .5px;
+}
+
+.nav-link:active {
+  color: var(--primary-color);
+}
+
+.btn-login {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  color: var(--default-color);
+  text-decoration: none;
+  box-shadow: #212529;
+}
+
+.btn-login:hover {
+  background-color: darken(var(--primary-color), 10%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--heading-color);
+}
+
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)), url('../Images/BGbackimg.jpeg') no-repeat center center/cover;
+  height: 85vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  position: relative;
+}
+
+.banner-content {
+  animation: fadeIn 2s ease-in-out;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
 }
 
 .banner h1 {
   font-size: 3.5rem;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   line-height: 1.2;
 }
 
-.banner .banner-short {
-  font-size: 13px;
-  letter-spacing: 0.8px;
+.banner p {
+  font-size: 1.2rem;
 }
 
-.banner-phara {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-phara p {
-  max-width: 450px;
-}
-
-.banner .btn-primary {
-  background-color: var(--primary-color);
-  border: var(--primary-color);
+.banner .fs-4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 .banner .btn-outline-light {
